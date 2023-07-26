@@ -1,0 +1,13 @@
+package com.handsOn.gen;
+
+import java.util.Scanner;
+
+public class ExamPaper {
+	public static void main(String[] args) {
+		int rollNo;
+		Scanner sc = new Scanner(System.in);
+		rollNo = sc.nextInt();
+		
+	}
+
+}

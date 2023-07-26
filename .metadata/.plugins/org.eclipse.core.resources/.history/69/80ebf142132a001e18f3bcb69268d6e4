@@ -1,0 +1,22 @@
+package com.handsOn.gen;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+public class Lift {
+
+
+	    public static void main(String[] args) {
+	        // Create a Scanner object to read input from the console
+	        Scanner scanner = new Scanner(System.in);
+	        int i = 3;
+	        Map<String, Integer> l = new HashMap<>();
+	        l.put("A", 1);
+	        l.put("B", 7);
+	        
+	        if(l.get("A")-3))
+	        
+	        // Remember to close the scanner to free up resources
+	        scanner.close();
+	    }
+	}
+

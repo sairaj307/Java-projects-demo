@@ -1,0 +1,17 @@
+package com.handsOn.gen;
+import java.util.Scanner;
+public class Lift {
+	public static void main(String args[]) {
+		int tc, call;
+		int a=1,b=7;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("test cases: ");
+		tc = sc.nextInt();
+		while(tc<0) {
+			System.out.println("enter the lift call: ");
+			
+			tc--;
+		}
+	}
+
+}

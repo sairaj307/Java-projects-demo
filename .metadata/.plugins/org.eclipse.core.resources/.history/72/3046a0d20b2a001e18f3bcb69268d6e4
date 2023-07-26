@@ -1,0 +1,29 @@
+package com.tnsif.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class DBUtil {
+	private static final String DB_DRIVER_CLASS = "com.mysql.cj.jdbc.Driver";
+	private static final String DB_USERNAME = "root";
+	private static final String DB_PASSWORD = "root";
+	private static final String DB_URL = "jdbc:mysql://localhost:3306/greet";
+
+	public static Connection getConnection() {
+		Connection cn = null;
+		try {
+			Class.forName(DB_DRIVER_CLASS); // Load the database driver
+			System.out.println("Driver loaded successfully....");
+
+			// Connect to the database
+			cn = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
+			System.out.println("Connection established successfully....");
+		} catch (ClassNotFoundException e) {
+			System.out.println("Error: " + e.getMessage());
+		} catch (SQLException e) {
+			System.out.println("Error: " + e.getMessage());
+		}
+		return cn;
+	}
+}

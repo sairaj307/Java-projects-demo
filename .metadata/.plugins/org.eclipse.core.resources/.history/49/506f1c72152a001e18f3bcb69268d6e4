@@ -1,0 +1,23 @@
+package com.handsOn.gen;
+import java.util.Scanner;
+public class Lift {
+	public static void main(String args[]) {
+		int tc, call;
+		int a=1,b=7;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("test cases: ");
+		tc = sc.nextInt();
+		for(int i=0; i<tc; i++) {
+			System.out.println("enter the lift call: ");
+			call = sc.nextInt();
+			if(Math.abs(call-a)<=Math.abs(call - b)) {
+				System.out.println("A");
+				a = call;
+			}
+			else {
+				System.out.println("B");
+				b = call;
+			}
+		}
+	}
+}

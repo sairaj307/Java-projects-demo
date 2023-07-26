@@ -1,0 +1,8 @@
+package com.handsOn.gen;
+
+public class ExamPaper {
+	public static void main(String[] args) {
+		
+	}
+
+}
